@@ -200,6 +200,21 @@ p,li{
 	margin-left: 8px;
 }
 
+.story_list:hover {
+	background-color: #f0f9e6; /* 淺綠 hover 背景 */
+	cursor: pointer;/* 滑鼠變小手 */
+}
+
+/* Q:請問要怎麼讓 story_arrow_link 和 story_text_link 可以同步產生 hover、active 效果呢，story_list沒法直接包到 */
+.story_arrow_link:active .arrow path {
+	fill: #356400;
+}
+
+.story_text_link:active{
+	color: #356400;
+	border-bottom: 1px solid #356400;
+}
+
 .footer{
 	background: #F8F9FA;
 }
