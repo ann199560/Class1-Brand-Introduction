@@ -105,6 +105,7 @@ p,li{
 .history_list{
 	list-style-type: disc;
 	list-style-position: inside;
+	text-indent: 0.5em;
 }
 
 .history_content .history_list::marker{
