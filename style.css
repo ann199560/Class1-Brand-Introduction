@@ -135,7 +135,8 @@ header{
 	border-bottom: 1px solid #DEE2E6;
 }
 
-.story_list{
+.story_link{
+	text-decoration: none;
 	padding: 8px 0;
 }
 
@@ -144,27 +145,27 @@ header{
 	color: #57A203;
 }
 
-.story_text_link{
+.story_text{
 	padding-bottom: 4px;
 	border-bottom: 1px solid #57A203;
-	text-decoration: none;
 	color: #57A203;
 	margin-left: 8px;
 }
 
-.story_list:hover {
-	background-color: #f0f9e6; /* 淺綠 hover 背景 */
-	cursor: pointer;/* 滑鼠變小手 */
+.story_link:hover{
+	background-color: #F5FEE7;
+	cursor: pointer; /* 滑鼠變小手 */
 }
 
-
-.story_arrow_link:active .arrow path {
-	fill: #356400;
+/* 可以被點擊的才能加:active，所以只能放 a 的 class，後面則是被指定物件：連結被點擊後，後面指定物件要做ＸＸ事 */
+.story_link:active .story_text{
+	color: #477A11;
+	border-bottom: 1px solid #477A11;
 }
 
-.story_text_link:active{
-	color: #356400;
-	border-bottom: 1px solid #356400;
+/* .arrow 是 svg，不吃 color，所以加 path 和改 fill */
+.story_link:active .arrow path{
+	fill: #477A11;
 }
 
 .footer{
